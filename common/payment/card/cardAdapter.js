@@ -1,14 +1,16 @@
-class TossPayAdapter extends Payment {
-  constructor(toss) {
+import { PaymentMethod } from "../payment";
+
+export class CardAdapter extends PaymentMethod {
+  constructor(card) {
     super();
-    this.toss = toss;
+    this.card = card;
   }
 
   pay(amount) {
-    this.toss.tossPay(amount);
+    this.card.cardInsert(amount);
   }
 
   getName() {
-    return "TossPay";
+    return "card";
   }
 }
