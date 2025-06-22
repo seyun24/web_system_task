@@ -1,10 +1,10 @@
 import { AbstractKiosk } from "../common/kiosk.js";
 import { MenuItem } from "../common/menu/menuItem.js";
 import { paymentStrategies } from "../common/payment/paymentStrategy.js";
-import { McDonaldsMenuFactory } from "./menuFactory.js";
+import { StarbucksMenuFactory } from "./menuFactory.js";
 
 
-export class McDonaldsKiosk extends AbstractKiosk {
+export class StarbucksKiosk extends AbstractKiosk {
   constructor(saleStrategy, orderItem, menuOptions, paymentMethod) {
       super();
       this.saleStrategy = saleStrategy;
@@ -14,7 +14,7 @@ export class McDonaldsKiosk extends AbstractKiosk {
   }
 
   loadMenus() {
-    this.menuFactory = new McDonaldsMenuFactory();
+    this.menuFactory = new StarbucksMenuFactory();
     this.menuFactory.createMenus()
     this.setMenus(this.menuFactory.getMenus());
   }

@@ -1,5 +1,6 @@
-import { PaymentMethod } from "../payment";
+import { PaymentMethod } from "../paymentMethod.js";
 
+//PaymentMetod 인터페이스로 통합된 카드결제 어댑터 클래스
 export class CardAdapter extends PaymentMethod {
   constructor(card) {
     super();
@@ -7,7 +8,7 @@ export class CardAdapter extends PaymentMethod {
   }
 
   pay(amount) {
-    this.card.cardInsert(amount);
+    this.card.payWithCard(amount);
   }
 
   getName() {

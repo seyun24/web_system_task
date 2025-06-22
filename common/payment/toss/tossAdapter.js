@@ -1,6 +1,8 @@
-import { PaymentMethod } from "../payment";
+import { PaymentMethod } from "../paymentMethod.js";
 
-class TossPayAdapter extends PaymentMethod {
+
+//PaymentMetod 인터페이스로 통합된 토스페이 어댑터 클래스
+export class TossPayAdapter extends PaymentMethod {
   constructor(toss) {
     super();
     this.toss = toss;
