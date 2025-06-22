@@ -12,14 +12,14 @@ import { StarbucksKiosk } from "./Starbucks/StarbucksKiosk.js";
 import { SubwayHalfStrategy, SubwaySeasonSaleStrategy } from "./Subway/saleStrategy.js";
 import { SubwayKiosk } from "./Subway/subwayKiosk.js";
 
-// mcDonaldTest1();
-// mcDonaldTest2();
+mcDonaldTest1();
+mcDonaldTest2();
 
-// subwayTest1();
-// starbucksTest2();
+subwayTest1();
+starbucksTest2();
 
 starbucksTest1();
-// starbucksTest2();
+starbucksTest2();
 
 function mcDonaldTest1() {
     console.log("맥도날드 테스트 케이스 1");
